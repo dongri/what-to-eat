@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="contents">
+    <image wx:if="{{!hasUserInfo && canIUse}}" src="../../images/app.jpg" class="app-icon" mode="cover"></image>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">{{login}}</button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <view class="view-item">{{item}}</view>
+      <button type="warn" bindtap="bindStartTap">{{actionButton}}</button>
+      <view class="navigator-menu" bindtap="bindNavigatorTap">{{editMenu}}</view>
+    </block>
+  </view>
+</view>

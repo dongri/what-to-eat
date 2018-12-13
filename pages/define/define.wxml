@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="define">
+    <form bindsubmit="bindFormSubmit">
+      <textarea class="textarea-menu" name="menu" value="{{menu}}" auto-focus />
+      <button class="button-save" type="primary" form-type="submit">{{saveButton}}</button>
+    </form>
+  </view>
+</view>

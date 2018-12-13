@@ -1,0 +1,17 @@
+/* pages/define/define.wxss */
+.define {
+  width: 96%;
+}
+.textarea-menu {
+  border: 1px solid #999;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.button-save {
+  margin-top: 20rpx;
+}
